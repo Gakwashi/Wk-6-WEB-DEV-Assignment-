@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skincare Routine Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Skincare Routine Planner</h1>
+  <button id="themeToggle">Switch to Night Routine </button>
+
+  <section>
+    <h2>Product Counter</h2>
+    <p>Products used today: <span id="productCount">0</span></p>
+    <button id="addProduct">Add Product</button>
+  </section>
+
+  <section>
+    <h2> Skincare FAQs</h2>
+    <button class="faqToggle">What’s the best cleanser for oily skin?</button>
+    <p class="faqAnswer hidden">Look for gel-based cleansers with salicylic acid to help control oil and prevent breakouts.</p>
+  </section>
+
+  <section>
+    <h2>Skincare Profile Form</h2>
+    <form id="skincareForm">
+      <label>Name: <input type="text" id="name"></label><br>
+      <label>Email: <input type="text" id="email"></label><br>
+      <label>Skin Type:
+        <select id="skinType">
+          <option value="">Select</option>
+          <option value="dry">Dry</option>
+          <option value="oily">Oily</option>
+          <option value="combination">Combination</option>
+        </select>
+      </label><br>
+      <label>Password: <input type="password" id="password"></label><br>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="formFeedback"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
